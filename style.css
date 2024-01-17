@@ -201,15 +201,15 @@
     background-image: url(/images/house.jpg);
   }
   
-  .bg-rent {
-    background-image: url(/images/mudroom.jpg);
+  .bg-prop {
     min-height: 20rem;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
   }
-  
-  .bg-sale {
-    background-image: url(/images/kitchen.jpg);
-    min-height: 20rem;
-  }
+
   
   .bg-sm-logo {
     background-image: url(/images/logo.png);
