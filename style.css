@@ -1,5 +1,531 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+:root {
+    --grey-color: rgb(90,90,90);
+    --deep-red: #821D2D;
+    --grey-hover: #414141;
+  }
+  
+  
+  * {
+      padding: 0;
+      margin:0;
+      box-sizing: border-box;
+      /*border: 1px solid red;*/
+    }
+    
+    body {
+      font-family: "trajan-pro-3", serif;
+    }
+    
+    img {
+      max-width:100%;
+    }
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  
+    
+    
+    /* ------------- Utility Classes --------------  */
+    
+      .left     {  text-align: left;     }
+      .right    {  text-align: right;    }
+      .centered {  text-align: center;   }
+    
+    
+      .padded   {  padding: 5%;    }
+      .padded-05 {  padding: 0.5rem;  }
+      .padded-1 {  padding: 1rem;  }
+      .padded-2 {  padding: 2rem;  }
+      .nav-padded { padding: 0px 3rem; }
+      .prop-padded { padding: 1.5rem 5rem;}
+      .padded-top{ padding-top: 2rem;}
+      .padded-left { padding-left: 4rem;}
+      .padded-bottom { padding-bottom: 2rem;}
+      .padded-top-au {padding-top: 1rem;}
+      .padded-bot-au { padding-bottom: 1rem;}
+  
+      .border {
+        border: 2px solid var(--deep-red);
+      }
+    
+      .capped-width { max-width: 1100px; margin: auto;}
+    
+      .tall-05  {  min-height: 5vh;   }
+      .tall-10  {  min-height: 10vh;   }
+      .tall-30  {  min-height: 30vh;   }
+      .tall-40  {  min-height: 40vh;   }
+      .tall-50  {  min-height: 50vh;   }
+      .tall-60  {  min-height: 60vh;   }
+      .tall-65  {  min-height: 65vh;   }
+      .tall-70  {  min-height: 70vh;   }
+      .tall-80  {  min-height: 80vh;   }
+      .tall-100 {  min-height: 100vh;  }
+    
+      .light-text   { color: white; }
+      .dark-text { color: var(--deep-red);  }
+      .grey-text {color: var(--grey-color); }
+    
+      .bg-red { background-color: var(--deep-red);
+                color: white;}
+      
+      .bg-grey {
+        background-color:#f4f3f3;
+      }
+  
+      .s-box {
+        min-height: 200px;
+      }
+    
+      .light-text   { color: white; }
+      .dark-text { color: var(--deep-red);  }
+      .grey-text {color: var(--grey-color); }
+        /* General typography */
+    
+      h2, h3, h4, h5, h6 {
+        line-height: 1;
+        margin-bottom: 0.8rem;
+        }
+    
+      h1  {font-size: 2.2rem;
+            font-weight: 600;}
+      h2  { font-size: 1.5rem;  
+            font-weight: 600;}
+      h3  { font-size: 1.8rem;
+              font-weight: 600;}
+      h4  { font-size: 1.4rem;
+            font-weight:600;}
+      p   { font-size: 1.2rem;  
+            font-family: 'Athelas';
+      }
+  
+    
+    
+        p, ul {
+         margin-bottom: 0.8rem;
+        }
+    
+        /* this makes sure that the last element in any container doesn't have margin-bottom */
+        h2:last-child,
+        h3:last-child,
+        h4:last-child,
+        h5:last-child,
+        h6:last-child,
+        p:last-child {
+        margin-bottom:0;
+        }
+  
+  
+  
+  .quote {
+          font-size: 6rem;
+        }
+  
+  .subtitle { font-size: 1.2rem;  
+              line-height: 3;}
+  
+  nav {
+    font-size:  1rem;
+    font-weight: 600;
+  }
+  
+  i {
+    font-size: 2rem;
+    color:#821D2D;
+  }
+  
+  footer h4 {
+    font-size: 1.25rem;
+  }
+  
+  footer nav a {
+    display:block;
+    padding: 0.25rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: 'Athelas';
+  }
+  
+  .cr {
+    font-size: .8rem;
+  }
+  
+  
+  
+  
+  
+  /* Aspect Ratio  */
+  .portrait-tall { padding-bottom: 175%; }
+  .portrait { padding-bottom: 125%; }
+  .square { padding-bottom: 100%; }
+  .landscape { padding-bottom: 66%; }
+  .landscape-wide { padding-bottom: 56%; }
+  
+  /* Background Position */
+  .bg-pos-t { background-position: top; }
+  .bg-pos-b { background-position: bottom; }
+  .bg-pos-l { background-position: left; }
+  .bg-pos-r { background-position: right; }
+  
+  
+  .gallery [class*="col-"] {
+    padding: 0.5%;und-position: right; }
+  
+  
+  /* Images */
+  
+  .bg-image {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/images/condo-front.jpg);
+  }
+  
+  .bg-logo {
+      background-image: url(/images/header.png);
+      background-position: center;
+  }
+  
+  .bg-welcome {
+    background-image: url(/images/kevin-centered.JPG);
+    background-position: 0% 40%;
+  }
+  
+  .bg-aboutus {
+    background-image: url(/images/Kevin-2.png);
+  }
+  
+  .bg-house {
+    background-image: url(/images/house.jpg);
+  }
+  
+  .bg-rent {
+    background-image: url(/images/cassie-gallegos-tjoxkIODoCE-unsplash.jpg);
+  }
+  
+  .bg-sale {
+    background-image: url(/images/matt-donders-boz4mBOeR2U-unsplash.jpg);
+  }
+  
+  .bg-sm-logo {
+    background-image: url(/images/logo.png);
+    background-size: 500px;
+    background-color: white;
+    background-position: center;
+  }
+  
+  .bg-md-logo {
+    background-image: url(/images/logo.png);
+    background-size: 800px;
+    background-color: white;
+    background-position: center;
+  }
+  
+  .bg-warren {
+    background-image: url(/images/home-warrendrive.jpeg);
+  }
+  
+  .bg-kevin {
+    background-image: url(/images/kevin-2.jpg);
+    background-position: 50% 40%;
+  }
+  
+  .listingsize {
+    max-width: 400px; /* Set the max width */
+    max-height: 400px; /* Set the max height */
+    overflow: hidden; /* Hide any overflow beyond the max dimensions */
+    margin: auto;
+  }
+  
+  /* Formspree box */ 
+  fieldset {
+    border-width: 0px;
+  }
+  
+  
+  /* Button & Link Styles */
+  
+  
+  a:hover {
+    color: black; }
+  
+  .button,
+  .button-solid,
+  .button-inverted {
+    text-decoration: none;
+    color: white;
+    background-color:var(--deep-red);
+    border: 2px solid var(--deep-red);
+    padding: 0.6rem 2rem;
+    /*margin-top: .5rem;*/
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 700;
+    }
+  
+  .button:hover {
+    color: var:var(--grey-hover);
+  }
+  
+  .shadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+  
+  .features {
+    text-decoration: none;
+    background-color: var(--grey-color);
+    padding: 0.6rem 2rem;
+    /*margin-top: .5rem;*/
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 500;
+    }
+  
+    /* Mobile Menu Styles */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .mobile-menu a {
+    display: block;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+  
+  .hamburger-button {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hamburger-button i {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+  }
+  
+  
+  /* Drop down */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+   }
+   .dropdown-title {
+    padding: 0.25rem 0.5rem;
+    display: inline-block;
+   }
+   .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: -1rem;
+    padding: 0.5rem;
+    display: none;
+    background-color: var(--deep-red);
+    z-index: 2;
+    text-align: left;
+    min-width: 10rem;
+   }
+   .dropdown:hover .dropdown-content {
+    display: block;
+   }
+   .dropdown-content a {
+    display: block;
+   }
+  
+    /* Contact */
+  
+    input, textarea {
+      border-style: solid;
+      border: 2px solid rgb(200, 200, 205);
+      padding: 0.8em;
+      display: block;
+      width: 100%;
+      font-size: 1rem;
+      vertical-align: top;
+    }
+    
+    input:focus,
+    textarea:focus {
+      outline: none;
+      /* featured color */
+    }
+    
+    textarea {
+      min-height: 7em;
+    }
+    
+    input[type="submit"] {
+      width: auto;
+      display: block;
+    }
+    
+    .email-signup input {
+      width: 30%;
+      display: inline-block;
+      max-width: 250px;
+      margin-top:1rem;
+    }
+    
+    .email-signup .button-solid {
+      padding: 0.8em;
+      border-radius: 0;
+      font-size: 1rem;
+    }
+    form .button {
+      width:100%;
+    }
+      @media(max-width:768px) {
+       .email-signup input {
+         width: 100%;
+         max-width: 100%;
+       }
+     }
+  
+     
+  /* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
+  
+  .show-xs, 
+  .show-sm,
+  .show-md, 
+  .mobile-menu {
+      display: none;
+  }
+  
+  
+  /* ---- LG Media (80em / 1280 px) -----*/ 
+  @media (max-width:80em) {
+    .hide-lg { display: none;}
+    .show-lg { display: block; }
+  }
+  
+  /* ------- MD Media Query (64em / 1024px) --------------- */ 
+  /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+  
+  @media (max-width: 64em) {
+  
+  
+    nav { font-size: 1rem; }
+  
+    .nav-padded { padding: 0px 1rem; }
+  
+    .show-md { display: block; }
+    .hide-md { display: none;  }
+  
+    .md-bg-pos-t { background-position: top; }
+    .md-bg-pos-b { background-position: bottom; }
+    .md-bg-pos-l { background-position: left; }
+    .md-bg-pos-r { background-position: right;}
+  
+    .md-tall-10 { min-height: 10vh;}
+    .md-tall-20 { min-height: 20vh;}
+    .md-tall-30 { min-height: 30vh;}
+  
+  }
+  
+  /* ------- SM Media Query (48em / 768px) --------------- */ 
+  /* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+  
+  @media (max-width: 48em) {
+  
+  
+    
+    .nav-padded {
+      padding: 0px .3rem;
+    }
+  
+  
+    .show-sm { display: block; }
+    .hide-sm { display: none;  }
+       
+    .sm-text-center { text-align: center; }
+    .sm-text-left { text-align: left; }
+    .sm-text-right { text-align: right; }
+  
+    .sm-padded { padding: 5%; }
+    .sm-padded-1 { padding: 1rem; }
+    .sm-padded-15 { padding: 1.5rem; }
+    .sm-padded-05 { padding: 0.5rem; }
+    .sm-padded-3 { padding: 3rem; }
+  
+    .sm-padded-t-0 { padding-top: 1rem; }
+    .sm-padded-b-0 { padding-bottom: 0; }
+    .sm-padded-l-0 { padding-left: 0; }
+    .sm-padded-r-0 { padding-right: 0; }
+    
+    .sm-margin-t-0 { margin-top: 0; }
+    .sm-margin-b-0 { margin-bottom: 0; }
+    .sm-margin-l-0 { margin-left: 0; }
+    .sm-margin-r-0 { margin-right: 0; }
+  
+    .sm-tall-15 {min-height: 15vh;}
+    .sm-tall-20 {min-height: 20vh;}
+    .sm-tall-250 {min-height: 25vh;}
+    .sm-tall-30 {min-height: 30vh;}
+  
+    h1 { font-size: 1.8rem; }
+    h3 { font-size: 1.5rem;}
+    p  { font-size: 1rem;}
+  
+    .sm-prop-h1 { font-size: 1.2rem; } 
+    .sm-prop-h2 { font-size: 1 rem; }
+  
+    .button { font-size: .7rem; }
+    .sm-center-button { 
+      text-align: center;
+      vertical-align: center; }
+  
+    
+  }
+  
+  
+  /* ------- XS Media Query (36em / 576px) --------------- */ 
+  /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+  
+  @media (max-width: 36em) {
+  
+  
+    .show-xs { display: block; }
+    .hide-xs { display: none;  }
+  
+    .xs-text-center { text-align: center; }
+    .xs-text-left { text-align: left; }
+    .xs-text-right { text-align: right; }
+  
+    h4 { font-size: 1rem; }
+    .quote { font-size: 4rem;}
+    p { font-size: 1rem;} 
+    h1 { font-size: 1.2rem;}
+    h3 { font-size: 1.5rem; }
+  
+  
+  
+    .prop-h1 { font-size: 2rem;}
+  
+  
+   .xs-tall-20 {min-height: 20vh;} 
+   .xs-tall-30 {min-height: 30vh;}
+  
+    .bg-sm-logo { background-size: 350px; }
+  
+    .xs-padded-t-0 { padding-top: 1rem; }
+    .xs-padded-t-2 { padding-top: 2rem; }
+    .xs-padded-l-0 { padding-left: 0;}
+  
+    .xs-bg-pos-t { background-position: top; }
+    .xs-bg-pos-b { background-position: bottom; }
+    .xs-bg-pos-l { background-position: left; }
+    .xs-bg-pos-r { background-position: right;}
+  
+    .xs-tall-15 {min-height: 15vh;}
+    .xs-tall-20 {min-height: 20vh;}
+    .xs-tall-250 {min-height: 25vh;}
+    .xs-tall-30 {min-height: 30vh;}
+  }
+  
+  
+  

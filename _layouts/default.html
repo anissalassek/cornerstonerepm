@@ -1,16 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        {% include head.html %}
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/style.css" />
-    <title>{{page.title}}</title>
-</head>
+    <body>
+        
+   <!---- Hamburger for mobile  -->     
+        <div>
+            <div class="col-1 show-sm">
+                <div class="hamburger-button right">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
 
-<body>
-    {{content}}
+        <nav class="mobile-menu padded bg-red">
+            <a href="/index.html">Home</a>
+            <a href="/about-us.html">About Us</a>
+            <div class="dropdown">
+                <span class="dropdown-title"> Services </span>
+                <div class="dropdown-content">
+                  <a href="/propertymanagement.html"> Property Management </a>
+                  <a href="/realestate.html">  Residental Real Estate</a>
+                </div>
+              </div>
+            <a href="/for-rent.html">For Rent</a>
+            <a href="/for-sale.html">For Sale</a>
+            <a href="/contact.html">Contact Us</a> 
+        </nav>
+    
+        <!---- Header -->
+
+        <header class="grid padded-05" style="display: block;">
+            <a href="/index.html"> <div class="col-12 bg-image bg-logo padded-2 tall-40 show-lg hide-sm" title="Cornerstone Real Estate & Property Management Logo"></div>
+                </a>
+            <a href="/index.html" style="display: block;">
+                <div class="col-12 bg-image bg-sm-logo sm-padded-05 sm-tall-20 hide-lg show-sm" title="Cornerstone Real Estate & Property Management Logo"></div>
+            </a>
+        </header>
+
+        <!--- Navigation -->
+        <div class="grey-text padded-05 bg-red hide-sm">
+            <nav class=" bg-red centered">
+                    <a href="/index.html" class="nav-padded">Home</a>
+                    <a href="/about-us.html" class="nav-padded">About Us</a>
+                    <div class="dropdown nav-padded">
+                        <span class="dropdown-title"> Services </span>
+                        <div class="dropdown-content">
+                          <a href="/propertymanagement.html"> Property Management </a>
+                          <a href="/realestate.html">  Residental Real Estate</a>
+                        </div>
+                      </div>
+                    <a href="/for-rent.html" class="nav-padded">For Rent</a>
+                    <a href="/for-sale.html" class="nav-padded">For Sale</a>
+                    <a href="/contact.html" class="nav-padded">Contact Us</a>
+                </div>
+            </nav>
+        </div>
+
+
+        {{content}}
+
+        <!----Footer -->
+        <footer class="grid-spaceAround md:grid-cols-4 p-5 bg-red padded-1 padded-top xs-text-center">
+            <div class="cp-4_xs-12 md:pr-8 light-text xs xs-text-center">
+                <h4> Cornerstone Real Estate <br>& Property Management LLC </h4>
+                <p>Email: masseysellscolorado@yahoo.com </p>
+                <p>Phone: 303-875-0403 </p>
+                <p>Address: 17063 E 104th Way, Commerce City, CO 80022-0615</p>
+            </div>
+
+            <div class="p-4_xs-6 xs-padded-t-2">
+                <h4>Our Services</h4>
+                <nav>
+                    <a href="/propertymanagement.html"> Property Management Services<a>
+                    <a href="/realestate.html"> Residential Real Estate </a>
+                </nav>
+            </div>
+            <div class="p-4_xs-6 xs-padded-t-2">
+                <h4 class="caps"> Explore </h4>
+                <nav>
+                  <a href="/for-rent.html"> Properties for Rent </a>
+                  <a href="/for-sale.html"> Properties for Sale </a>
+                  <a href="/contact.html"> Let's Connect! </a>
+                </nav>
+              </div>
+              <div class="col-12 padded-1 padded-top centered xs-padded-t-2">
+                <p class="cr">COPYRIGHT © Cornerstone Real Estate & Property Management LLC</p>
+                <p class="cr">Designed and Coded by Anissa Lassek</p>
+              </div>
+         </footer>
+    
+    <!---JQUERY at the bottom-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!---- Animate on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--- Slick Slider  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!--- our custom JavaScript file-->
+    <script src="/scripts.js"></script>
+
 </body>
-
 </html>

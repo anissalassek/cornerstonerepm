@@ -1,5 +1,89 @@
 ---
 layout: default
-title: Homepage
 ---
-<h1>Welcome to your homepage!</h1>
+
+<!----Welcome Section -->
+        <section class="grid padded bg-grey">
+            <div class="col-6 bg-image bg-welcome hide-xs tall-50 padded bg-pos-t md-tall-20" title="Kevin Massey"></div>
+            <div class="col-6_xs-12 padded top">
+                <h1 class="editable dark-text">Welcome</h1>
+                <p class="editable">Let Cornerstone Real Estate and Property Management be your foundation in the real estate world! </p>
+                <p class="editable">Whether you are first time home buyers, have extensive experience with buying and selling, are seeking to start your investment portfolio, or just want to know what your property might rent for, we would love to help you every step of the way.</p>
+            </div>
+        </section>
+
+<!---Services-->
+        <section class="grid">
+            <div class="col-12 padded-top padded-left dark-text editable"><h1>Our Services</h1></div>
+            <div class="col-4_xs-12 centered padded">
+                <i class="fa-solid fa-house padded-bot-au editable"></i>
+                <h4 class="padded editable">Property Management Services</h4>
+                <p class="padded-bot-au editable">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim sint, nisi sequi tenetur odit tempore tempora culpa minus fugiat doloremque dolore repellendus ad voluptate porro fugit distinctio magnam quasi quidem!</p>
+                <div class="button">
+                    <a href="/propertymanagement.html">Learn More</a>
+                </div>
+            </div>
+            <div class="col-4_xs-12 centered padded">
+                <i class="fa-solid fa-door-open padded-bot-au editable"></i>
+                    <h4 class="padded editable">Real Estate Services</h4>
+                    <p class="padded-bot-au editable">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus ratione incidunt repudiandae quaerat sit, dolore ad natus cupiditate magni? Assumenda quas unde facilis suscipit voluptas sunt voluptatibus. Fugiat, quas soluta.</p>
+                <div class="button">
+                    <a href="/realestate.html">Let's Talk</a>
+                </div>
+            </div>
+            <div class="col-4_xs-12 centered padded">
+                <i class="fa-solid fa-mountain-city padded-bot-au editable"></i>
+                <h4 class="padded editable">Available Properties</h4>
+                <p class="padded-bot-au editable">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus ratione incidunt repudiandae quaerat sit, dolore ad natus cupiditate magni? Assumenda quas unde facilis suscipit voluptas sunt voluptatibus. Fugiat, quas soluta.</p>
+                <div class="button">
+                    <a href="/for-rent.html">Rental Properties</a>
+                </div>
+                <div class="padded-05"></div>
+                <div class="button">
+                    <a href="/for-sale.html">Properties for Sale</a>
+                </div>
+            </div>
+        </section>
+
+    
+<!---- Testimonial -->
+        <section class="grid padded-2 bg-red">
+            <div class="col-1 right">
+                <span class="quote">“</span>
+            </div>
+            <div class="col-10 centered padded-top editable">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur accusamus blanditiis mollitia porro aut aperiam officiis minus!</h4>
+                <p class="subtitle light-text editable">- Customer</p>
+            </div>
+            <div class="col-1 left">
+                <span class="quote">”</span>
+            </div>
+         </section>
+
+
+<!---Contact form -->
+    
+         <section class="grid prop-padded xs-text-center">
+            <div class="col-6_xs-12-middle padded">
+              <h1 class="dark-text padded-bottom editable">Let's Connect!</h1>
+                <p class="editable"> Cornerstone Real Estate and Property Management is here to help with all of your home needs! Feel Free to contact us!</p>
+                <p class="editable"> <strong> Email: </strong> masseysellscolorado@yahoo.com </p>
+                <p class="editable"> <strong> Phone: </strong> 303-875-0403 </p>
+            </div>
+            <div class="col-6_xs-12 xs-text-center">
+                <form id="fs-frm" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/xayrwdon" method="post">
+              <fieldset id="fs-frm-inputs">
+                <label for="full-name">Full Name</label>
+                <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                <label for="email-address">Email Address</label>
+                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                <label for="telephone">Telephone Number (Optional)</label>
+                <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555">
+                <label for="complaint">Message</label>
+                <textarea rows="6" name="message" id="message" placeholder="Your message here." required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Website Form Submission">
+              </fieldset>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+          </section>
