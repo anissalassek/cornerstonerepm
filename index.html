@@ -1,18 +1,21 @@
 ---
 layout: default
 services:
--   icon: fa-solid fa.house
+-   icon: fa-solid fa-house
     title: Property Management
     description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci temporibus nostrum suscipit sed quas voluptas ea, a odit voluptates odio illo officia ad saepe animi minima praesentium vero quibusdam at?
-    button: /propertymanagement.html
+    link: /propertymanagement.html
+    buttontext: Learn More
 -   icon: fa-solid fa-door-open
     title: Residential Real Estate
     description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci temporibus nostrum suscipit sed quas voluptas ea, a odit voluptates odio illo officia ad saepe animi minima praesentium vero quibusdam at?
-    button: /realestate.html
+    link: /realestate.html
+    buttontext: Lets Talk
 -   icon: fa-solid fa-mountain-city
     title: Available Properties
     description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci temporibus nostrum suscipit sed quas voluptas ea, a odit voluptates odio illo officia ad saepe animi minima praesentium vero quibusdam at?
-    button: /for-rent.html
+    link: /properties.html
+    buttontext: Availibility
 ---
 
 <!----Welcome Section -->
@@ -27,21 +30,24 @@ services:
 
 <!---Services-->
         <section class="grid">
-            <div class="col-12 padded-top padded-left dark-text editable"><h1>Our Services</h1></div>
-            <div class="col-4_xs-12 centered padded">
+            <div class="col-12 padded-top padded-left dark-text editable">
+                <h1>Our Services</h1>
+            </div>
 
                 {% for item in page.services %}
 
+            <div class="col-4_xs-12 centered padded">
                 <i class="{{item.icon}} padded-bot-au"></i>
                 <h4 class="padded"> {{item.title}} </h4>
                 <p class="padded-bot-au"> {{item.description}} </p>
                 <div class="button">
-                    <a href="{{item.button}}">Learn More</a>
-                
-                {% endfor %}
-                    
+                    <a href="{{item.link}}">{{item.buttontext}}</a>
                 </div>
             </div>
+                {% endfor %}
+                    
+        </section>
+
            
 
     

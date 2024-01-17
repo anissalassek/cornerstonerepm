@@ -1,0 +1,53 @@
+---
+layout: default
+title: forsale
+sale:
+-   image: /images/condo-front.jpg
+    address: 7525 E. 1st Pl., Unit 1008, Denver, CO 80230
+    bedbath: 2 Bed | 2 Bath
+    sqft: 1016 sqft
+    price: $2,400
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consectetur iusto sunt maxime velit quaerat, dolor esse. Ullam accusantium, maxime eveniet repellendus eaque illum et ipsam harum modi, aperiam obcaecati.
+    zillowlink: https://www.zillow.com/homedetails/7525-E-1st-Pl-SUITE-1008-Denver-CO-80230/58687056_zpid/?
+-   image: /images/condo-front.jpg
+    address: 7525 E. 1st Pl., Unit 1008, Denver, CO 80230
+    bedbath: 2 Bed | 2 Bath
+    sqft: 1016 sqft
+    price: $2,400
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consectetur iusto sunt maxime velit quaerat, dolor esse. Ullam accusantium, maxime eveniet repellendus eaque illum et ipsam harum modi, aperiam obcaecati.
+    zillowlink: https://www.zillow.com/homedetails/7525-E-1st-Pl-SUITE-1008-Denver-CO-80230/58687056_zpid/?
+-   image: /images/condo-front.jpg
+    address: 7525 E. 1st Pl., Unit 1008, Denver, CO 80230
+    bedbath: 2 Bed | 2 Bath
+    sqft: 1016 sqft
+    price: $2,400
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consectetur iusto sunt maxime velit quaerat, dolor esse. Ullam accusantium, maxime eveniet repellendus eaque illum et ipsam harum modi, aperiam obcaecati.
+    zillowlink: https://www.zillow.com/homedetails/7525-E-1st-Pl-SUITE-1008-Denver-CO-80230/58687056_zpid/?
+---
+
+    <!----Title -->
+    <div>
+        <h1 class="padded-left padded-top-au padded-bottom xs-text-center xs-padded-t-0 prop-h1 dark-text">Properties for Sale</h1>
+    </div>
+
+
+    <!--- Test listing -->
+    <section class="grid padded xs-text-center">
+
+        {% for item in page.sale %}
+
+        <div class="col-4_xs-12"><img src="{{item.image}}" alt="Condo for Rent in Denver, Colorado"></div>
+        <div class="col-8_xs-12 padded-left">
+            <p> {{item.address}} </p>
+            <p> {{item.bedbath}} </p>
+            <p> {{item.sqft}} </p>
+            <h4 class="dark-text"> {{item.price}} </h4>
+            <p> {{item.description}} </p>
+            <div class="left sm-center-button padded-top"><a href=" {{item.zillowlink}} " class="button">See Details</a></div>
+        </div>
+
+        {% endfor %}
+    </section>
+   
+     
+    

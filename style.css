@@ -202,11 +202,13 @@
   }
   
   .bg-rent {
-    background-image: url(/images/cassie-gallegos-tjoxkIODoCE-unsplash.jpg);
+    background-image: url(/images/mudroom.jpg);
+    min-height: 20rem;
   }
   
   .bg-sale {
-    background-image: url(/images/matt-donders-boz4mBOeR2U-unsplash.jpg);
+    background-image: url(/images/kitchen.jpg);
+    min-height: 20rem;
   }
   
   .bg-sm-logo {
