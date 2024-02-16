@@ -1,23 +1,37 @@
 ---
 layout: default
 services:
--   icon: fa-solid fa-house
-    title: Property Management
-    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci temporibus nostrum suscipit sed quas voluptas ea, a odit voluptates odio illo officia ad saepe animi minima praesentium vero quibusdam at?
-    link: /propertymanagement.html
-    buttontext: Learn More
--   icon: fa-solid fa-door-open
-    title: Residential Real Estate
-    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci temporibus nostrum suscipit sed quas voluptas ea, a odit voluptates odio illo officia ad saepe animi minima praesentium vero quibusdam at?
-    link: /realestate.html
-    buttontext: Lets Talk
--   icon: fa-solid fa-mountain-city
-    title: Available Properties
-    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci temporibus nostrum suscipit sed quas voluptas ea, a odit voluptates odio illo officia ad saepe animi minima praesentium vero quibusdam at?
-    link: /properties.html
-    buttontext: Availibility
+    -
+        icon: fa-solid fa-house
+        title: Property Management
+        description: >-
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+            temporibus nostrum suscipit sed quas voluptas ea, a odit voluptates
+            odio illo officia ad saepe animi minima praesentium vero quibusdam
+            at?
+        link: /propertymanagement.html
+        buttontext: Learn More
+    -
+        icon: fa-solid fa-door-open
+        title: Residential Real Estate
+        description: >-
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+            temporibus nostrum suscipit sed quas voluptas ea, a odit voluptates
+            odio illo officia ad saepe animi minima praesentium vero quibusdam
+            at?
+        link: /realestate.html
+        buttontext: Lets Talk
+    -
+        icon: fa-solid fa-mountain-city
+        title: Available Properties
+        description: >-
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+            temporibus nostrum suscipit sed quas voluptas ea, a odit voluptates
+            odio illo officia ad saepe animi minima praesentium vero quibusdam
+            at?
+        link: /properties.html
+        buttontext: Properties Available
 ---
-
 <!----Welcome Section -->
         <section class="grid padded bg-grey">
             <div class="col-6 bg-image bg-welcome hide-xs tall-50 padded bg-pos-t md-tall-20" title="Kevin Massey"></div>
@@ -79,16 +93,16 @@ services:
                 <form id="fs-frm" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/xayrwdon" method="post">
               <fieldset id="fs-frm-inputs">
                 <label for="full-name">Full Name</label>
-                <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                <input type="text" name="name" id="full-name" placeholder="First and Last" required="" />
                 <label for="email-address">Email Address</label>
-                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" />
                 <label for="telephone">Telephone Number (Optional)</label>
-                <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555">
+                <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555" />
                 <label for="complaint">Message</label>
                 <textarea rows="6" name="message" id="message" placeholder="Your message here." required=""></textarea>
-                <input type="hidden" name="_subject" id="email-subject" value="Website Form Submission">
+                <input type="hidden" name="_subject" id="email-subject" value="Website Form Submission" />
               </fieldset>
-              <input type="submit" value="Submit">
+              <input type="submit" value="Submit" />
             </form>
           </div>
           </section>
