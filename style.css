@@ -387,6 +387,18 @@
          max-width: 100%;
        }
      }
+
+
+     /* blog elements */
+
+     .tag {
+      border: 1px solid;
+      color: grey;
+      border-radius: 3px;
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.25rem;
+   }
   
      
   /* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
