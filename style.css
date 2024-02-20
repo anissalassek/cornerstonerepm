@@ -66,6 +66,7 @@
       .light-text   { color: white; }
       .dark-text { color: var(--deep-red);  }
       .grey-text {color: var(--grey-color); }
+      .black-text {color: black; }
     
       .bg-red { background-color: var(--deep-red);
                 color: white;}

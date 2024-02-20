@@ -3,15 +3,23 @@ layout: default
 title: Blog Page
 ---
 
+    <!----Title -->
+    <div class="padded-2 padded-left xs-text-center xs-padded-t-0 dark-text editable">
+        <h1 class="">Our Blog</h1>
+        <p class="black-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, possimus. Ipsa adipisci dolor nisi veniam dolore, quas tenetur neque? Officiis corrupti ipsum inventore molestias et quos vero in voluptate cumque!</p>
+    </div>
+
 <section class="grid">
 
    {% for post in site.posts %}
 
    <div class="col-4_xs-12 padded">
        <div class="bg-image square" style="background-image: url('{{post.featured_image}}')"></div>
-       <h3> {{post.title}} </h3>
-       <p> {{post.description}} </p>
-       <a href="{{post.url}}"> Read More </a>
+       <div class="padded-top">
+        <h3 class=""> {{post.title}} </h3>
+         <p> {{post.description}} </p>
+         <a href="{{post.url}}" class="button"> Read More </a>
+        </div>
    </div>
 
    {% endfor %}

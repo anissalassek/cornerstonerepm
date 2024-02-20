@@ -1,13 +1,13 @@
 ---
 layout: post
-title: My first post
+title: Blog Post Title Here
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-author: Tina
-categories: [travel, bali]
-featured_image: https://www.instituteofcode.com/houdini.jpg
+author: Cornerstone Real Estate & Property Management
+categories: [home, real estate]
+featured_image: /images/mudroom.jpg
 ---
 
-## Adventures in Bali
+## Title Here
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nostrum maiores, necessitatibus explicabo cum officiis deserunt ea reprehenderit in quod corporis adipisci voluptatum. Voluptatum rem alias quaerat deleniti minima pariatur.
 
