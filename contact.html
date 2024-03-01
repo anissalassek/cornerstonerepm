@@ -11,21 +11,22 @@ layout: default
       <p class="editable"> <strong> Email: </strong> masseysellscolorado@yahoo.com </p>
       <p class="editable"> <strong> Phone: </strong> 303-875-0403 </p>
   </div>
-  <div class="col-6_xs-12 xs-text-center">
-      <form id="fs-frm" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/xayrwdon" method="post">
-    <fieldset id="fs-frm-inputs">
-      <label for="full-name">Full Name</label>
-      <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-      <label for="email-address">Email Address</label>
-      <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-      <label for="telephone">Telephone Number (Optional)</label>
-      <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555">
-      <label for="complaint">Message</label>
-      <textarea rows="6" name="message" id="message" placeholder="Your message here." required=""></textarea>
-      <input type="hidden" name="_subject" id="email-subject" value="Website Form Submission">
-    </fieldset>
-    <input type="submit" value="Submit">
-  </form>
-</div>
+  <!--form -->
+    <div class="col-6">
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    </div>  
 </section>
 

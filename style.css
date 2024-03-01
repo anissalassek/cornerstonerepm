@@ -100,6 +100,11 @@
       p   { font-size: 1.2rem;  
             font-family: 'Athelas';
       }
+
+      form p {
+        font-size: 1rem;
+        font-family: font-family: "trajan-pro-3", serif;
+      }
   
     
     
