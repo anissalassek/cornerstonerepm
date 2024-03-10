@@ -81,35 +81,41 @@ services:
 
 
 <!---Contact form -->
-    
-         <section class="grid prop-padded xs-text-center">
-            <div class="col-6_xs-12-middle padded">
-              <h1 class="dark-text padded-bottom editable">Let's Connect!</h1>
-                <p class="editable"> Cornerstone Real Estate and Property Management is here to help with all of your home needs! Feel Free to contact us!</p>
-                <p class="editable"> <strong> Email: </strong> masseysellscolorado@yahoo.com </p>
-                <p class="editable"> <strong> Phone: </strong> 303-875-0403 </p>
-            </div>
-            <div class="col-6_xs-12 xs-text-center">
-                <form name="contact" method="POST" data-netlify="true">
-                    <p>
-                      <label>Your Name: <input type="text" name="name" /></label>
-                    </p>
-                    <p>
-                      <label>Your Email: <input type="email" name="email" /></label>
-                    </p>
-                    <p>
-                      <label>Your Phone Number (optional): <input type="telephone" name="telephone" /></label>
-                    </p>
-                    <p>
-                      <label>Message: <textarea name="message"></textarea></label>
-                    </p>
-                    <p>
-                      <button type="submit" class="button">Send</button>
-                    </p>
-                  </form>
-          </div>
-          </section>
-
-
+<section class="grid-middle padded b-pos">
+    <div class="col-6 bg-aboutme tall-50 container hide-md">
+      <img src="/images/W.png" class="c-w" alt="Logo"/>
+      <img src="/images/girl.png" class="image-frame image-3" alt="Girl"/>
+      <img src="/images/aboutme-leaves.png" class="am-leaves" alt="Leaves"/>
+    </div>
+    <div class="col-6_md-12 centered">
+      <div class="image-frame">
+        <h2>I would love to speak to you!</h2>
+        <div class="col-6_xs-12 xs-text-center forms">
+          <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label for="name">Your Name:</label>
+              <input type="text" id="name" name="name" required />
+            </p>
+            <p>
+              <label for="email">Your Email:</label>
+              <input type="email" id="email" name="email" required />
+            </p>
+            <p>
+              <label for="telephone">Your Phone Number (optional):</label>
+              <input type="tel" id="telephone" name="telephone" />
+            </p>
+            <p>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </p>
+            <p>
+              <button type="submit" class="button">Send</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
           
