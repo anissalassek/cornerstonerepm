@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<section class="padded grid">
+   <div class="col-12 center padded-1">
+       <h1> {{ page.category | capitalize }} posts </h1>
+       <p> {{ page.description }} </p>
+   </div>
+   {% for post in site.categories[page.category] %}
+       {% include post-loop-item-square.html %}
+   {% endfor %}
+</section>
