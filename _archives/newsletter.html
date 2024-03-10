@@ -1,0 +1,12 @@
+---
+layout: archive
+title: Newsletters
+description: This is a short description
+category: newsletters
+---
+
+<section class="padded grid">
+    {% for post in site.categories[page.category] %}
+       {% include post-loop-item-square.html %}
+    {% endfor %}
+ </section>
