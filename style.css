@@ -498,6 +498,25 @@
   font-weight: 300;
 }
   
+/* Social Share Nav  */
+
+.social-share a {
+  padding: 0.25rem 0.5rem;
+}
+
+/* Miscelaneous elements  */
+
+hr.short {
+  border: 1px solid var(--dark-text);
+  width: 2rem;
+  margin: 1rem 0;
+}
+
+hr.short.center {
+  margin:auto;
+  margin: 1rem auto;
+}
+
      
   /* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
   
