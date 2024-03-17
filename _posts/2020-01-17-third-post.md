@@ -1,8 +1,8 @@
 ---
 layout: post
-title: My third post 
+title: My Second Post 
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur
-author: Catherine
+author: Kerri Massey
 featured: true
 categories: [self care, travel]
 featured_image: /images/mudroom.jpg

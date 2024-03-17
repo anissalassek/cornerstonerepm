@@ -1,13 +1,12 @@
 ---
 layout: post
-title: My first post
-description: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum,
-  ab, eum dolore perspiciatis tenetur alias aspernatur
-author: Tina May
+title: My First Post
+description: 
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum,ab, eum dolore perspiciatis tenetur alias aspernatur
+author: Kerri
 featured: true
 categories: [newsletter]
-featured_image: https://source.unsplash.com/random?sig=7
+featured_image: /images/mudroom.jpg
 seo:
   title:
   description:
@@ -15,9 +14,6 @@ seo:
   twitter_card:
   keywords:
   hide-from-google: false
-_comments:
-  title: Max 70 characters
-  social_image: landscape 1200 x 600px
 ---
 ## Adventures in Bali
 

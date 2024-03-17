@@ -1,11 +1,11 @@
 ---
 layout: post
-title: My second post 
+title: My Second Post 
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur
-author: Daniel
+author: Kevin
 featured: true
 categories: [food]
-featured_image: https://source.unsplash.com/random?sig=6
+featured_image: /images/mudroom.jpg
 seo: 
     title: 
     description: 
