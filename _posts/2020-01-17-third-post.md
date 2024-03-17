@@ -7,6 +7,11 @@ categories:
   - category 1
   - category 2
 featured_image: /images/mudroom.jpg
+seo:
+  title:
+  description:
+  keywords:
+  hide-from-google: false
 ---
 ## Title Here
 

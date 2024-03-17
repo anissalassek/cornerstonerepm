@@ -5,6 +5,11 @@ description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
 author: Cornerstone Real Estate & Property Management
 categories: [home, real estate]
 featured_image: /images/mudroom.jpg
+seo:
+  title:
+  description:
+  keywords:
+  hide-from-google: false
 ---
 
 ## Title Here
