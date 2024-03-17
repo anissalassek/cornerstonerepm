@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Tecond Post 
+title: My Sixth Post 
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur
 author: Kerri 
 featured: true
