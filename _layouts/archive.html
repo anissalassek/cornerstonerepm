@@ -1,20 +1,6 @@
 ---
 layout: default
 ---
-{{ content }}
-<section class="padded grid">
-   {% if page.intro-header == true %}
-   <div class="col-12 center padded-1">
-       <h1> {{ page.category | capitalize }} posts </h1>
-       <p> {{ page.description }} </p>
-   </div>
-  
-   {% endif %}
-   {% for post in site.categories[page.category] %}
-       {% if page.post-style == “normal” %}
-       {% include post-loop-item-square.html %}
-       {% else %}
-       {% include post-loop-item-small.html %}
-       {% endif %}
-   {% endfor %}
-</section>
+
+<!------------------------ Archive Blog Loop ------------------------>
+{% include category-post-loop.html %}

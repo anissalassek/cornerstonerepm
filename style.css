@@ -436,6 +436,67 @@
       margin-top: 1rem;
       padding: 0.25rem;
    }
+
+   /* ------------ Blogging elements  ----------------------- */
+
+
+
+/* Post Loop Item  */
+
+.post-item {
+  text-decoration: none;
+}
+
+
+/* Individual Elements */
+
+.tag {
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-size: 0.8rem;
+  margin-right: 0.4rem;
+}
+
+.post-info {
+  font-size: 0.8rem;
+  color: var(--medium-text);
+}
+
+/* Individual Blog Post Pages  */
+
+.blog-content h1 {
+  font-family: 'Martel', serif; 
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+.blog-content p {
+  line-height: 1.6;
+}
+
+.blog-content hr {
+  border: none;
+  border: 1px solid var(--medium);
+}
+
+
+/* Sidebar */
+.sidebar-item {
+  border: 2px solid var(--light);
+  margin-bottom: 1rem;
+  color: var(--medium-text);
+}
+.sidebar-item p {
+  font-family: 'Mulish', serif; 
+  font-weight: 300;
+}
+
+.recent-posts-nav a{
+  display: block;
+  font-weight: 300;
+}
   
      
   /* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
