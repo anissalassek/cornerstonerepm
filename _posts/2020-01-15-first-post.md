@@ -6,7 +6,7 @@ description:
 author: Kerri
 featured: true
 categories: [newsletter]
-featured_image: /images/mudroom.jpg
+featured_image: images/mudroom.jpg
 seo:
   title:
   description:
