@@ -35,7 +35,7 @@ layout: default
         <h2 class="dark-text">See More Posts</h2>
     
         {% for link in site.archives %}
-        <a href="{{link.url}}" class="button"> {{ link.category | capitalize }} </a>
+        <a href="{{link.url}}" class="tag"> {{ link.category | capitalize }} </a>
         {% endfor %}
     </div>
     </section>
