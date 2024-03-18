@@ -1,3 +1,4 @@
+source: _site
 paths:
   uploads: uploads
   dam_uploads: ''
@@ -29,8 +30,5 @@ _inputs:
       allow_create: true
       empty_type: array
     cascade: true
-_select_data: {}
-_structures: {}
-_editables: {}
 data_config: {}
 timezone: Etc/UTC
