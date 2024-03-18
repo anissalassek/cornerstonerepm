@@ -554,7 +554,7 @@ hr.short.center {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #E9E5E2;
+  background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -573,7 +573,7 @@ hr.short.center {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown-content a:hover {color:var(--dark-text);}
+.dropdown-content a:hover {color:#821D2D;}
 
 /* Fixed sidenav, full height */
 .sidenav {
