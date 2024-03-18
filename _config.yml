@@ -1,3 +1,5 @@
+destination: _site
+
 collections:
   posts:
     output: true
