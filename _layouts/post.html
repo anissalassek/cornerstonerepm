@@ -30,12 +30,12 @@ layout: default
 </section>
 
 <!--- see more -->
-<section class="grid">
+<section class="grid padded">
     <div class="col-12">
         <h1>See More Posts</h1>
     
         {% for link in site.archives %}
-        <a href="{{link.url}}"> {{ link.category | capitalize }} </a>
+        <a href="{{link.url}}" class="button"> {{ link.category | capitalize }} </a>
         {% endfor %}
     </div>
     </section>
