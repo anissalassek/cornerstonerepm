@@ -9,7 +9,7 @@
 
         </div>
 
-            {% for post in site.categories[page.category] limit:12 %}
+            {% for post in site.categories[page.categories] limit:12 %}
 
                 {% include post-loop-item-square.html %}
 

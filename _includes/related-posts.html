@@ -5,9 +5,9 @@
     <div class="grid-center">
     
     
-    {% capture pageCategory %}{{ page.categories[0] }}{% endcapture %}
+    {% capture pageCategories %}{{ page.categories[0] }}{% endcapture %}
 
-    {% assign relevant-posts = site.categories[page.category] | where_exp:"post","post.url != page.url and post.hidden != true" %}
+    {% assign relevant-posts = site.categories[page.categories] | where_exp:"post","post.url != page.url and post.hidden != true" %}
 
 
       {% for post in relevant-posts limit:3 %}
