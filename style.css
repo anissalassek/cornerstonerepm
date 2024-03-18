@@ -60,7 +60,7 @@
 .padded-r-2 { padding-right: 2rem; }
 
 .padded-t-0 { padding-top: 0; }
-.padded-b-0 { padding-bottom: 0; }
+.padded-b-0 { padding-bottom: 1rem; }
 .padded-l-0 { padding-left: 0; }
 .padded-r-0 { padding-right: 0; }
   
@@ -261,6 +261,13 @@
   .listingsize {
     max-width: 400px; /* Set the max width */
     max-height: 400px; /* Set the max height */
+    overflow: hidden; /* Hide any overflow beyond the max dimensions */
+    margin: auto;
+  }
+
+  .bg-mem {
+    max-width: 300px;
+    max-height: 300px;
     overflow: hidden; /* Hide any overflow beyond the max dimensions */
     margin: auto;
   }
@@ -566,7 +573,7 @@ hr.short.center {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown-content a:hover {color:#678872}
+.dropdown-content a:hover {color:var(--dark-text);}
 
 /* Fixed sidenav, full height */
 .sidenav {
