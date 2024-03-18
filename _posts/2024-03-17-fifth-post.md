@@ -1,20 +1,23 @@
 ---
 layout: post
-title: My Fourth Post 
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur
-author: Kerri 
+title: My Fifth Post
+description: >-
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum,
+    ab, eum dolore perspiciatis tenetur alias aspernatur
+author: Kerri
 featured: true
-categories: [self care, travel]
+categories:
+    - self care
+    - travel
 featured_image: /images/mudroom.jpg
-seo: 
-    title: 
-    description: 
-    social_image: 
-    keywords: 
+seo:
+    title:
+    description:
+    social_image:
+    keywords:
     hide-from-google: false
 ---
-
-## Adventures in Bali 
+## Adventures in Bali
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est?
 

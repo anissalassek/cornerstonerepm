@@ -30,9 +30,9 @@ layout: default
 </section>
 
 <!--- see more -->
-<section class="grid padded">
+<section class="grid padded-1">
     <div class="col-12">
-        <h1>See More Posts</h1>
+        <h2 class="dark-text">See More Posts</h2>
     
         {% for link in site.archives %}
         <a href="{{link.url}}" class="button"> {{ link.category | capitalize }} </a>
