@@ -266,9 +266,8 @@
   }
 
   .bg-mem {
-    max-height: 20rem;
     background-color: white;
-    background-size: cover;
+    background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
   }
