@@ -6,7 +6,9 @@ description: >-
     ab, eum dolore perspiciatis tenetur alias aspernatur
 author: Kerri
 featured: true
-categories: [real estate, property management]
+categories:
+    - real estate
+    - property management
 featured_image: /images/mudroom.jpg
 seo:
     title:
