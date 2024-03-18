@@ -13,10 +13,16 @@ collections_config:
     path: ''
     output: true
     filter: strict
+    description: ''
     icon: notes
+    _editables:
+    _inputs:
+    _select_data:
+    _structures:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+    schemas:
 _inputs:
   categories:
     type: multiselect
