@@ -3,7 +3,7 @@ destination: _site
 collections:
   posts:
     output: true
-    permalink: _site/posts/:year/:slug
+    permalink:/posts/:year/:slug
   archives: 
     output: true
     permalink: /:title
