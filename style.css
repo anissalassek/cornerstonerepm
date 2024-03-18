@@ -266,10 +266,11 @@
   }
 
   .bg-mem {
-    max-width: 300px;
-    max-height: 300px;
-    overflow: hidden; /* Hide any overflow beyond the max dimensions */
-    margin: auto;
+    max-height: 20rem;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   
 
