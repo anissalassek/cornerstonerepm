@@ -337,7 +337,7 @@
     }
   
   .button:hover {
-    color: var:var(--grey-hover);
+    color: var(--grey-hover);
   }
   
   .shadow {
@@ -371,7 +371,7 @@
     /* Style navigation menu links */
     .topnav a {
       color: black;
-      padding: 14px 16px;
+      padding: 16px 16px;
       text-decoration: none;
       font-size: 17px;
       display: block;
