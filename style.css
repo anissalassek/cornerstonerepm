@@ -358,7 +358,7 @@
     /* Style the navigation menu */
     .topnav {
       overflow: hidden;
-      background-color: #821D2D;
+      background-color: var(--deep-red);
       position: relative;
       z-index: 2;
     }
@@ -370,7 +370,7 @@
     
     /* Style navigation menu links */
     .topnav a {
-      color: white;
+      color: black;
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
@@ -379,7 +379,7 @@
     
     /* Style the hamburger menu */
     .topnav a.icon {
-      background: #821D2D;
+      background: white;
       display: block;
       position: absolute;
       right: 0;
@@ -388,7 +388,7 @@
     
     /* Add a grey background color on mouse-over */
     .topnav a:hover {
-      background-color: white;
+      background-color: #ddd;
       color: black;
     }
     
