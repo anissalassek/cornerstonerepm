@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-with-sidebar
 title: My Second Post
 description: >-
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum,
