@@ -10,10 +10,10 @@ layout: default
         <div class="intro padded-1">
 
             {% for item in page.categories %}
-                <span class="tag"> {{ item }}</span>
+                <span class="tag padded-b-1"> {{ item }}</span>
             {% endfor %}
             
-            <h1> {{ page.title }} </h1>
+            <h1 class="dark-text"> {{ page.title }} </h1>
             
             <p class="post-info"> by {{ page.author }} | {{ page.date | date_to_string }} </p>
          
