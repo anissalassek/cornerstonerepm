@@ -1,23 +1,52 @@
 seo:
   site_name: Cornerstone Real Estate & Property Management
-  title: Default SEO Title
-  description:
-  keywords:
-  social_image:
-  author:
-  favicon_image:
+  title: >-
+    Opening Doors in Denver Real Estate | Cornerstone Real Estate & Property
+    Management
+  description: >-
+    Unlock the potential of Denver's real estate market with Cornerstone Real
+    Estate & Property Management. From first-time homebuyers to seasoned
+    investors, our experienced team is dedicated to opening doors and guiding
+    you through every aspect of your real estate journey. Whether you're buying,
+    selling, or seeking expert property management solutions, trust our 30+
+    years of industry expertise to provide personalized service and achieve your
+    goals. Let us streamline your property management needs and maximize your
+    investment potential. Contact us today to discover how we can help you
+    thrive in Denver's dynamic real estate landscape!"
+  keywords: >-
+    Denver real estate, Property management Denver, Real estate services Denver,
+    Denver property management company, Real estate experts Denver, Denver
+    rental properties, Property investment Denver, Home buying Denver, Home
+    selling Denver, Rental property management Denver, Investment portfolio
+    management Denver, Residential property management Denver, Commercial
+    property management Denver, Real estate consultation Denver, Property
+    valuation Denver, Tenant screening Denver, Lease agreements Denver, Property
+    maintenance Denver, Landlord services Denver, Commerce City real estate,
+    Property management Commerce City, Commerce City rental properties, Real
+    estate services Commerce City, Investment properties Commerce City, Home
+    buying Commerce City, Home selling Commerce City, Commerce City property
+    management company, Commerce City real estate experts, Rental property
+    management Commerce City, Commercial property management Commerce City,
+    Residential property management Commerce City, Property investment Commerce
+    City, Real estate consultation Commerce City, Tenant screening Commerce
+    City, Lease agreements Commerce City, Property maintenance Commerce City,
+    Landlord services Commerce City, Property valuation Commerce City,
+    Investment portfolio management Commerce City
+  social_image: /_site/images/logo.png
+  author: Cornerstone Real Estate & Property Management LLC
+  favicon_image: /siteicon.png
 social:
   instagram_username:
   facebook_url:
   twitter_username:
 design:
-  dark-text_color: rgb(60,60,65)
-  medium-text_color: rgb(90,90,95)
+  dark-text_color: '#3c3c41'
+  medium-text_color: '#5a5a5f'
   light-text_color: '#f7f5f3'
-  featured-text_color: red
-  dark_color: rgb(60,60,65)
+  featured-text_color: '#ff0000'
+  dark_color: '#3c3c41'
   medium_color: '#ede8e4'
   light_color: '#f7f5f3'
   v-light_color: '#f9f9f9'
-  featured_color: '#6495ed'
-  accent_color: rgb(167, 74, 74)
+  featured_color:
+  accent_color: '#a74a4a'
