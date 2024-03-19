@@ -379,7 +379,7 @@
     
     /* Style the hamburger menu */
     .topnav a.icon {
-      background: white;
+      background: rgb(90,90,90);
       display: block;
       position: absolute;
       right: 0;
