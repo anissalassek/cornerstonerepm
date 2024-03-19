@@ -358,7 +358,7 @@
     /* Style the navigation menu */
     .topnav {
       overflow: hidden;
-      background-color: var(--deep-red);
+      background-color: #821D2D;
       position: relative;
       z-index: 2;
     }
@@ -370,7 +370,7 @@
     
     /* Style navigation menu links */
     .topnav a {
-      color: black;
+      color: #821D2D;
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
@@ -379,7 +379,7 @@
     
     /* Style the hamburger menu */
     .topnav a.icon {
-      background: white;
+      background: #ddd;
       display: block;
       position: absolute;
       right: 0;
@@ -394,8 +394,8 @@
     
     /* Style the active link (or home/logo) */
     .active {
-      background-color: rgb(90,90,90);
-      color: black;
+      background-color: #ddd;
+      color: #821D2D;
     }
   
   /* Drop down */
