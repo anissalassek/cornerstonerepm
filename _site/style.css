@@ -1,0 +1,792 @@
+:root {
+    --grey-color: rgb(90,90,90);
+    --deep-red: #821D2D;
+    --grey-hover: #414141;
+  }
+  
+  
+  * {
+      padding: 0;
+      margin:0;
+      box-sizing: border-box;
+      /*border: 1px solid red;*/
+    }
+    
+    body {
+      font-family: "trajan-pro-3", serif;
+    }
+    
+    img {
+      max-width:100%;
+    }
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  
+    
+    
+    /* ------------- Utility Classes --------------  */
+    
+      .left     {  text-align: left;     }
+      .right    {  text-align: right;    }
+      .centered {  text-align: center;   }
+    
+    
+      .padded   {  padding: 5%;    }
+      .padded-05 {  padding: 0.5rem;  }
+      .padded-1 {  padding: 1rem;  }
+      .padded-2 {  padding: 2rem;  }
+      .nav-padded { padding: 0px 3rem; }
+      .prop-padded { padding: 1.5rem 5rem;}
+      .padded-top{ padding-top: 2rem;}
+      .padded-left { padding-left: 4rem;}
+      .padded-bottom { padding-bottom: 2rem;}
+      .padded-top-au {padding-top: 1rem;}
+      .padded-bot-au { padding-bottom: 1rem;}
+
+      .padded-tb  { padding-top: 5%; padding-bottom: 5%; }
+.padded-lr  { padding-left: 5%; padding-right: 5%; }
+
+.padded-t-1 { padding-top: 1rem; }
+.padded-b-1 { padding-bottom: 1rem; }
+.padded-l-1 { padding-left: 1rem; }
+.padded-r-1 { padding-right: 1rem; }
+
+.padded-t-2 { padding-top: 2rem; }
+.padded-b-2 { padding-bottom: 2rem; }
+.padded-l-2 { padding-left: 2rem; }
+.padded-r-2 { padding-right: 2rem; }
+
+.padded-t-0 { padding-top: 0; }
+.padded-b-0 { padding-bottom: 1rem; }
+.padded-l-0 { padding-left: 0; }
+.padded-r-0 { padding-right: 0; }
+  
+      .border {
+        border: 2px solid var(--deep-red);
+      }
+    
+      .capped-width { max-width: 1100px; margin: auto;}
+    
+      .tall-05  {  min-height: 5vh;   }
+      .tall-10  {  min-height: 10vh;   }
+      .tall-30  {  min-height: 30vh;   }
+      .tall-40  {  min-height: 40vh;   }
+      .tall-50  {  min-height: 50vh;   }
+      .tall-60  {  min-height: 60vh;   }
+      .tall-65  {  min-height: 65vh;   }
+      .tall-70  {  min-height: 70vh;   }
+      .tall-80  {  min-height: 80vh;   }
+      .tall-100 {  min-height: 100vh;  }
+    
+      .light-text   { color: white; }
+      .dark-text { color: var(--deep-red);  }
+      .grey-text {color: var(--grey-color); }
+      .black-text {color: black; }
+    
+      .bg-red { background-color: var(--deep-red);
+                color: white;}
+      
+      .bg-grey {
+        background-color:#f4f3f3;
+      }
+  
+      .s-box {
+        min-height: 200px;
+      }
+    
+      .light-text   { color: white; }
+      .dark-text { color: var(--deep-red);  }
+      .grey-text {color: var(--grey-color); }
+        /* General typography */
+    
+      h2, h3, h4, h5, h6 {
+        line-height: 1;
+        margin-bottom: 0.8rem;
+        }
+    
+      h1  {font-size: 2.2rem;
+            font-weight: 600;}
+      h2  { font-size: 1.5rem;  
+            font-weight: 600;}
+      h3  { font-size: 1.8rem;
+              font-weight: 600;}
+      h4  { font-size: 1.4rem;
+            font-weight:600;}
+      p   { font-size: 1.2rem;  
+            font-family: 'Athelas';
+      }
+
+      .form-p {
+        font-size: 1rem;
+        font-family: font-family: "trajan-pro-3", serif;
+      }
+  
+    
+    
+        p, ul {
+         margin-bottom: 0.8rem;
+        }
+    
+        /* this makes sure that the last element in any container doesn't have margin-bottom */
+        h2:last-child,
+        h3:last-child,
+        h4:last-child,
+        h5:last-child,
+        h6:last-child,
+        p:last-child {
+        margin-bottom:0;
+        }
+  
+  
+  
+  .quote {
+          font-size: 6rem;
+        }
+  
+  .subtitle { font-size: 1.2rem;  
+              line-height: 3;}
+  
+  nav {
+    font-size:  1rem;
+    font-weight: 600;
+  }
+  
+  i {
+    font-size: 2rem;
+    color:#821D2D;
+  }
+  
+  footer h4 {
+    font-size: 1.25rem;
+  }
+  
+  footer nav a {
+    display:block;
+    padding: 0.25rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: 'Athelas';
+  }
+  
+  .cr {
+    font-size: .8rem;
+  }
+  
+  
+  
+  
+  
+  /* Aspect Ratio  */
+  .portrait-tall { padding-bottom: 175%; }
+  .portrait { padding-bottom: 125%; }
+  .square { padding-bottom: 100%; }
+  .landscape { padding-bottom: 66%; }
+  .landscape-wide { padding-bottom: 56%; }
+  
+  /* Background Position */
+  .bg-pos-t { background-position: top; }
+  .bg-pos-b { background-position: bottom; }
+  .bg-pos-l { background-position: left; }
+  .bg-pos-r { background-position: right; }
+  
+  
+  .gallery [class*="col-"] {
+    padding: 0.5%;und-position: right; }
+  
+  
+  /* Images */
+  
+  .bg-image {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/images/condo-front.jpg);
+  }
+  
+  .bg-logo {
+      background-image: url(/images/header.png);
+      background-position: center;
+  }
+  
+  .bg-welcome {
+    background-image: url(/images/kevin-centered.JPG);
+    background-position: 0% 40%;
+  }
+  
+  .bg-aboutus {
+    background-image: url(/images/Kevin-2.png);
+  }
+  
+  .bg-house {
+    background-image: url(/images/house.jpg);
+  }
+  
+  .bg-prop {
+    min-height: 20rem;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  
+  .bg-sm-logo {
+    background-image: url(/images/logo.png);
+    background-size: 500px;
+    background-color: white;
+    background-position: center;
+  }
+  
+  .bg-md-logo {
+    background-image: url(/images/logo.png);
+    background-size: 800px;
+    background-color: white;
+    background-position: center;
+  }
+  
+  .bg-warren {
+    background-image: url(/images/home-warrendrive.jpeg);
+  }
+  
+  .bg-kevin {
+    background-image: url(/images/kevin-2.jpg);
+    background-position: 50% 40%;
+  }
+  
+  .listingsize {
+    max-width: 400px; /* Set the max width */
+    max-height: 400px; /* Set the max height */
+    overflow: hidden; /* Hide any overflow beyond the max dimensions */
+    margin: auto;
+  }
+
+  .bg-mem {
+    background-color: white;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+
+  /* responsive banner */
+  .image-container {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    position: relative;
+    max-width: 800px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Positioning for large screens */
+  .image-container img:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 30%; /* Adjust width as needed */
+  }
+  
+  .image-container img:nth-child(2) {
+    z-index: 1; /* Ensure center image is on top */
+  }
+  
+  .image-container img:nth-child(3) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 30%; /* Adjust width as needed */
+  }
+  
+
+  
+  
+  /* Button & Link Styles */
+  
+  
+  a:hover {
+    color: black; }
+  
+  .button,
+  .button-solid,
+  .button-inverted {
+    text-decoration: none;
+    color: white;
+    background-color:var(--deep-red);
+    border: 2px solid var(--deep-red);
+    padding: 0.6rem 2rem;
+    /*margin-top: .5rem;*/
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 700;
+    }
+  
+  .button:hover {
+    color: var:var(--grey-hover);
+  }
+  
+  .shadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+  
+  .features {
+    text-decoration: none;
+    background-color: var(--grey-color);
+    padding: 0.6rem 2rem;
+    /*margin-top: .5rem;*/
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 500;
+    }
+  
+    /* Mobile Menu Styles */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .mobile-menu a {
+    display: block;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+  
+  .hamburger-button {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hamburger-button i {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+  }
+  
+  
+  /* Drop down */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+   }
+   .dropdown-title {
+    padding: 0.25rem 0.5rem;
+    display: inline-block;
+   }
+   .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: -1rem;
+    padding: 0.5rem;
+    display: none;
+    background-color: var(--deep-red);
+    z-index: 2;
+    text-align: left;
+    min-width: 10rem;
+   }
+   .dropdown:hover .dropdown-content {
+    display: block;
+   }
+   .dropdown-content a {
+    display: block;
+   }
+  
+    /* Contact */
+  
+    input, textarea {
+      border-style: solid;
+      border: 2px solid rgb(200, 200, 205);
+      padding: 0.8em;
+      display: block;
+      width: 100%;
+      font-size: 1rem;
+      vertical-align: top;
+    }
+    
+    input:focus,
+    textarea:focus {
+      outline: none;
+      /* featured color */
+    }
+    
+    textarea {
+      min-height: 7em;
+    }
+    
+    input[type="submit"] {
+      width: auto;
+      display: block;
+    }
+    
+    .email-signup input {
+      width: 30%;
+      display: inline-block;
+      max-width: 250px;
+      margin-top:1rem;
+    }
+    
+    .email-signup .button-solid {
+      padding: 0.8em;
+      border-radius: 0;
+      font-size: 1rem;
+    }
+    form .button {
+      width:100%;
+    }
+      @media(max-width:768px) {
+       .email-signup input {
+         width: 100%;
+         max-width: 100%;
+       }
+     }
+
+
+     /* blog elements */
+
+     .tag {
+      border: 1px solid;
+      color: grey;
+      border-radius: 3px;
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.25rem;
+   }
+
+   /* ------------ Blogging elements  ----------------------- */
+
+
+
+/* Post Loop Item  */
+
+.post-item {
+  text-decoration: none;
+}
+
+
+/* Individual Elements */
+
+.tag {
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-size: 0.8rem;
+  margin-right: 0.4rem;
+}
+
+.post-info {
+  font-size: 1rem;
+}
+
+/* Individual Blog Post Pages  */
+
+.blog-content h1 {
+  font-family: 'Martel', serif; 
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+.blog-content p {
+  line-height: 1.6;
+}
+
+.blog-content hr {
+  border: none;
+  border: 1px solid var(--medium);
+}
+
+
+/* Sidebar */
+.sidebar-item {
+  border: 2px solid var(--light);
+  margin-bottom: 1rem;
+  color: var(--medium-text);
+}
+.sidebar-item p {
+  font-family: 'Mulish', serif; 
+  font-weight: 300;
+}
+
+.recent-posts-nav a{
+  display: block;
+  font-weight: 300;
+}
+  
+/* Social Share Nav  */
+
+.social-share a {
+  padding: 0.25rem 0.5rem;
+}
+
+/* Miscelaneous elements  */
+
+hr.short {
+  border: 1px solid var(--dark-text);
+  width: 2rem;
+  margin: 1rem 0;
+}
+
+hr.short.center {
+  margin:auto;
+  margin: 1rem auto;
+}
+
+/* Dropdown Button */
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown-content a:hover {color:#821D2D;}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  font-family: 'Bodoni Moda', serif;
+  text-transform: uppercase;
+  padding:3% 3%;
+}
+
+/* On mouse-over */
+ .dropdown-btn:hover {
+  background-color: #E9E5E2;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: white;
+  color: Black;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color:#E9E5E2;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+  padding-left: 20px;
+}
+
+.author {
+  font-size: 0.9rem;
+  color: white;
+  margin-top: 0.5rem;
+  text-align: right;
+}
+
+
+     
+  /* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
+  
+  .show-xs, 
+  .show-sm,
+  .show-md, 
+  .mobile-menu {
+      display: none;
+  }
+  
+  
+  /* ---- LG Media (80em / 1280 px) -----*/ 
+  @media (max-width:80em) {
+    .hide-lg { display: none;}
+    .show-lg { display: block; }
+  }
+  
+  /* ------- MD Media Query (64em / 1024px) --------------- */ 
+  /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+  
+  @media (max-width: 64em) {
+  
+  
+    nav { font-size: 1rem; }
+  
+    .nav-padded { padding: 0px 1rem; }
+  
+    .show-md { display: block; }
+    .hide-md { display: none;  }
+  
+    .md-bg-pos-t { background-position: top; }
+    .md-bg-pos-b { background-position: bottom; }
+    .md-bg-pos-l { background-position: left; }
+    .md-bg-pos-r { background-position: right;}
+  
+    .md-tall-10 { min-height: 10vh;}
+    .md-tall-20 { min-height: 20vh;}
+    .md-tall-30 { min-height: 30vh;}
+  
+  }
+  
+  /* ------- SM Media Query (48em / 768px) --------------- */ 
+  /* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+  
+  @media (max-width: 48em) {
+  
+  
+    
+    .nav-padded {
+      padding: 0px .3rem;
+    }
+  
+  
+    .show-sm { display: block; }
+    .hide-sm { display: none;  }
+       
+    .sm-text-center { text-align: center; }
+    .sm-text-left { text-align: left; }
+    .sm-text-right { text-align: right; }
+  
+    .sm-padded { padding: 5%; }
+    .sm-padded-1 { padding: 1rem; }
+    .sm-padded-15 { padding: 1.5rem; }
+    .sm-padded-05 { padding: 0.5rem; }
+    .sm-padded-3 { padding: 3rem; }
+  
+    .sm-padded-t-0 { padding-top: 1rem; }
+    .sm-padded-b-0 { padding-bottom: 0; }
+    .sm-padded-l-0 { padding-left: 0; }
+    .sm-padded-r-0 { padding-right: 0; }
+    
+    .sm-margin-t-0 { margin-top: 0; }
+    .sm-margin-b-0 { margin-bottom: 0; }
+    .sm-margin-l-0 { margin-left: 0; }
+    .sm-margin-r-0 { margin-right: 0; }
+  
+    .sm-tall-15 {min-height: 15vh;}
+    .sm-tall-20 {min-height: 20vh;}
+    .sm-tall-250 {min-height: 25vh;}
+    .sm-tall-30 {min-height: 30vh;}
+  
+    h1 { font-size: 1.8rem; }
+    h3 { font-size: 1.5rem;}
+    p  { font-size: 1rem;}
+  
+    .sm-prop-h1 { font-size: 1.2rem; } 
+    .sm-prop-h2 { font-size: 1 rem; }
+  
+    .button { font-size: .7rem; }
+    .sm-center-button { 
+      text-align: center;
+      vertical-align: center; }
+  
+    
+  }
+  
+  
+  /* ------- XS Media Query (36em / 576px) --------------- */ 
+  /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+  
+  @media (max-width: 36em) {
+  
+  
+    .show-xs { display: block; }
+    .hide-xs { display: none;  }
+  
+    .xs-text-center { text-align: center; }
+    .xs-text-left { text-align: left; }
+    .xs-text-right { text-align: right; }
+  
+    h4 { font-size: 1rem; }
+    .quote { font-size: 4rem;}
+    p { font-size: 1rem;} 
+    h1 { font-size: 1.2rem;}
+    h3 { font-size: 1.5rem; }
+  
+  
+  
+    .prop-h1 { font-size: 2rem;}
+  
+  
+   .xs-tall-20 {min-height: 20vh;} 
+   .xs-tall-30 {min-height: 30vh;}
+  
+    .bg-sm-logo { background-size: 350px; }
+  
+    .xs-padded-t-0 { padding-top: 1rem; }
+    .xs-padded-t-2 { padding-top: 2rem; }
+    .xs-padded-l-0 { padding-left: 0;}
+  
+    .xs-bg-pos-t { background-position: top; }
+    .xs-bg-pos-b { background-position: bottom; }
+    .xs-bg-pos-l { background-position: left; }
+    .xs-bg-pos-r { background-position: right;}
+  
+    .xs-tall-15 {min-height: 15vh;}
+    .xs-tall-20 {min-height: 20vh;}
+    .xs-tall-250 {min-height: 25vh;}
+    .xs-tall-30 {min-height: 30vh;}
+  }
+  
+  
+  
