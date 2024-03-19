@@ -645,8 +645,8 @@ hr.short.center {
 
 /* Add an active class to the active dropdown button */
 .active {
-  background-color: #821D2D;
-  color: white;
+  background-color: #ddd;
+  color: black;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
