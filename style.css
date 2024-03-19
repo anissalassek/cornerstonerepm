@@ -271,6 +271,12 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  .bg-footer {
+    background-size: 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   
 
   /* responsive banner */
