@@ -638,7 +638,8 @@ hr.short.center {
   cursor: pointer;
   outline: none;
   text-transform: uppercase;
-  padding:3% 3%;
+  padding:3% 2%;
+  font-family: "trajan-pro-3", serif;
 }
 
 /* On mouse-over */
