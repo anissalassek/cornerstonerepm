@@ -376,6 +376,16 @@
       color: var(--black);
       padding: 16px 16px;
       text-decoration: none;
+      font-size: 1rem;
+      display: block;
+    }
+
+    /* for cornerstone name in menu need a different font size */
+
+    .cs-link {
+      color: var(--black);
+      padding: 16px 16px;
+      text-decoration: none;
       font-size: 1.5rem;
       display: block;
     }
@@ -619,7 +629,7 @@ hr.short.center {
 .sidenav a, .dropdown-btn {
 
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1rem;
   display: block;
   border: none;
   background: none;
@@ -627,8 +637,6 @@ hr.short.center {
   text-align: left;
   cursor: pointer;
   outline: none;
-  font-size: 1rem;
-  font-family: 'Bodoni Moda', serif;
   text-transform: uppercase;
   padding:3% 3%;
 }
