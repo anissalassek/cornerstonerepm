@@ -2,30 +2,21 @@
 layout: default
 title: forrent
 rent:
--   image: /images/condo-front.jpg
-    address: 7525 E. 1st Pl., Unit 1008, Denver, CO 80230
-    bedbath: 2 Bed | 2 Bath
-    sqft: 1016 sqft
-    price: $2,400
-    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consectetur iusto sunt maxime velit quaerat, dolor esse. Ullam accusantium, maxime eveniet repellendus eaque illum et ipsam harum modi, aperiam obcaecati.
-    zillowlink: https://www.zillow.com/homedetails/7525-E-1st-Pl-SUITE-1008-Denver-CO-80230/58687056_zpid/?
--   image: /images/condo-front.jpg
-    address: 7525 E. 1st Pl., Unit 1008, Denver, CO 80230
-    bedbath: 2 Bed | 2 Bath
-    sqft: 1016 sqft
-    price: $2,400
-    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consectetur iusto sunt maxime velit quaerat, dolor esse. Ullam accusantium, maxime eveniet repellendus eaque illum et ipsam harum modi, aperiam obcaecati.
-    zillowlink: https://www.zillow.com/homedetails/7525-E-1st-Pl-SUITE-1008-Denver-CO-80230/58687056_zpid/?
--   image: /images/condo-front.jpg
-    address: 7525 E. 1st Pl., Unit 1008, Denver, CO 80230
-    bedbath: 2 Bed | 2 Bath
-    sqft: 1016 sqft
-    price: $2,400
-    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consectetur iusto sunt maxime velit quaerat, dolor esse. Ullam accusantium, maxime eveniet repellendus eaque illum et ipsam harum modi, aperiam obcaecati.
-    zillowlink: https://www.zillow.com/homedetails/7525-E-1st-Pl-SUITE-1008-Denver-CO-80230/58687056_zpid/?
+    -
+        image: /images/condo-front.jpg
+        address: 7525 E. 1st Pl., Unit 1008, Denver, CO 80230
+        bedbath: 2 Bed | 2 Bath
+        sqft: 1016 sqft
+        price: $2,400
+        description: >-
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            consectetur iusto sunt maxime velit quaerat, dolor esse. Ullam
+            accusantium, maxime eveniet repellendus eaque illum et ipsam harum
+            modi, aperiam obcaecati.
+        zillowlink: >-
+            https://www.zillow.com/homedetails/7525-E-1st-Pl-SUITE-1008-Denver-CO-80230/58687056_zpid/?
 ---
-
-    <!----Title -->
+<!----Title -->
     <div>
         <h1 class="padded-2 padded-left xs-text-center xs-padded-t-0 dark-text editable">Properties for Rent</h1>
     </div>
@@ -36,7 +27,7 @@ rent:
 
         {% for item in page.rent %}
 
-        <div class="col-4_xs-12"><img src="{{item.image}}" alt="Condo for Rent in Denver, Colorado"></div>
+        <div class="col-4_xs-12"><img src="{{item.image}}" alt="Condo for Rent in Denver, Colorado" /></div>
         <div class="col-8_xs-12 padded-left ">
             <p> {{item.address}} </p>
             <p> {{item.bedbath}} </p>
