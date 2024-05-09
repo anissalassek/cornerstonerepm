@@ -1,6 +1,6 @@
 ---
 layout: post-with-sidebar
-title: March 2024
+title: March 2024 Market Statistics
 description: |-
     Just like spring, the real estate market has sprung into action! As mortgage
     interest rates stabilized in March to just under 7%, mortgage applications
