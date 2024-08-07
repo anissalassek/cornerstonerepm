@@ -15,7 +15,7 @@ featured: true
 categories:
     - real estate
     - property management
-featured_image: /uploads/24-07-dmar-trends.jpeg
+featured_image: /uploads/24-07-dmar-trends.jpg
 seo:
     title:
     description:
